@@ -68,7 +68,7 @@ class fbase_controller extends fs_controller
                 $nombre .= ' (' . $cli->razonsocial . ')';
             }
 
-            $json[] = array('value' => $cli->nombre, 'data' => $cli->codcliente, 'full' => $cli);
+            $json[] = array('value' => $nombre, 'data' => $cli->codcliente, 'full' => $cli);
         }
 
         header('Content-Type: application/json');
